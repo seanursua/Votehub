@@ -1,0 +1,148 @@
+:root {
+    --main-bg-color: #000;
+    --main-text-color: #000;
+    --second-text-color: #fff;
+    --cards-bg-color: #fff;
+    --border-votes-color: #66bb59;
+    --border-pending-color: #ffda00;
+    --border-abstain-color: #ea4c46;
+}
+
+.primary-text {
+    color: var(--main-text-color);
+}
+
+.logo-text {
+    color: var(--second-text-color);
+}
+.second-text {
+    color: var(--second-text-color);
+}
+
+.border-votes {
+    border-color: var(--border-votes-color) !important;
+}
+.border-pending {
+    border-color: var(--border-pending-color) !important;
+}
+
+.border-abstain {
+    border-color: var(--border-abstain-color) !important;
+}
+
+.primary-bg {
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+    background-color: var(--second-bg-color);
+}
+
+.voter-bg, 
+.pending-bg,
+.abstain-bg {
+    background-color: var(--cards-bg-color);
+}
+
+.voter-bg i {
+    color: var(--border-votes-color);
+}
+
+.pending-bg i {
+    color: var(--border-pending-color);
+}
+
+.abstain-bg i {
+    color: var(--border-abstain-color);
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #f6f8fa;
+}
+
+nav {
+    background-color: #fff;
+}
+
+#navbarSupportedContent .nav-link {
+    color: var(--main-bg-color),
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    background-color: #2B4050;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+.me-25 {
+    padding-right: 0.75rem !important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    font-family: 'Balsamiq Sans';
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    color: var(--main-bg-color);
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+    padding: 20px 30px;
+}
+#sidebar-wrapper .list-group-item:hover,
+#sidebar-wrapper .list-group-item:active {
+    color: #1DCDFE;
+}
+#sidebar-wrapper .list-group-item.active {
+    background-color: transparent;
+    color: #1DCDFE;
+    font-weight: bold;
+    border: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

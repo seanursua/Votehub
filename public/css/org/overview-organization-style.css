@@ -1,0 +1,150 @@
+:root {
+    --main-bg-color: #000;
+    --main-text-color: #fff;
+    --second-text-color: #fff;
+    --card-text-color: #000;
+    --voters-border-color: #ff6900;
+    --positions-border-color: #ef0872;
+    --candidates-border-color: #502ac1;
+    --cards-bg-color: #fff;
+}
+
+.primary-text {
+    color: var(--main-text-color);
+}
+
+.second-text {
+    color: var(--second-text-color);
+}
+
+.card-text {
+    color: var(--card-text-color);
+}
+
+.primary-bg {
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+    background-color: var(--second-bg-color);
+}
+
+.voter-bg,
+.positions-bg,
+.candidates-bg {
+    background-color: var(--cards-bg-color) !important;
+}
+
+.border-voters {
+    border-color: var(--voters-border-color) !important;
+}
+
+.voter-bg i {
+    color: var(--voters-border-color);
+}
+
+.positions-bg i {
+    color: var(--positions-border-color);
+}
+
+.candidates-bg i {
+    color: var(--candidates-border-color);
+}
+
+.border-positions {
+    border-color: var(--positions-border-color) !important;
+}
+
+.border-candidates {
+    border-color: var(--candidates-border-color) !important;
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #f6f8fa;
+}
+
+nav {
+    background-color: #fff;
+}
+
+#navbarSupportedContent .nav-link {
+    color: var(--main-bg-color),
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    background-color: #2B4050;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    font-family: 'Balsamiq Sans';
+}
+.me-25 {
+    padding-right: 0.75rem !important;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    color: var(--main-bg-color);
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+    padding: 20px 30px;
+}
+#sidebar-wrapper .list-group-item:hover,
+#sidebar-wrapper .list-group-item:active {
+    color: #1DCDFE;
+}
+#sidebar-wrapper .list-group-item.active {
+    background-color: transparent;
+    color: #1DCDFE;
+    font-weight: bold;
+    border: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

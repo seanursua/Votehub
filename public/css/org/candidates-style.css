@@ -1,0 +1,113 @@
+:root {
+  --main-bg-color: #000;
+  --main-text-color: #fff;
+  --second-text-color: #fff;
+  --header-bg-color: #2b4050;
+  --btn-archive-color: #594100;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+#headerBar {
+  padding-top: 15px !important;
+}
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+.bg-header {
+  background-color: var(--header-bg-color);
+}
+.rounded-full {
+  border-radius: 100%;
+}
+.btn-archive {
+  background-color: var(--btn-archive-color) !important;
+}
+#wrapper {
+  overflow-x: hidden;
+  background-color: #f6f8fa;
+}
+nav {
+  background-color: #fff;
+}
+#navbarSupportedContent .nav-link {
+  color: var(--main-bg-color);
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  background-color: #2b4050;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+.me-25 {
+  padding-right: 0.75rem !important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  font-family: "Balsamiq Sans";
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+.list-group-item:hover,
+.list-group-item:active {
+  color: #1dcdfe;
+}
+.list-group-item.active {
+  background-color: transparent;
+  color: #1dcdfe;
+  font-weight: bold;
+  border: none;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+.ml-1 {
+  margin-right: 0.2rem !important;
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}

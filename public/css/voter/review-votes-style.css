@@ -1,0 +1,36 @@
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #f6f8fa;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #fff;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+/* tr {
+    border: hidden !important;
+} */
+
+.table-head {
+    background-color: #2B4050 !important;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}

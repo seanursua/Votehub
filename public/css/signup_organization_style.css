@@ -1,0 +1,21 @@
+:root {
+  --links-text-color: #2B4050;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+}
+.container h4 {
+  font-family: 'Balsamiq Sans' !important;
+}
+.container a {
+  color: var(--links-text-color);
+}
+.container a:hover {
+  text-decoration: underline !important;
+}
